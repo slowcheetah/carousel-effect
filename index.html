@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?=Strings::$pageTitle?></title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/jquery.carousel.effect.js"></script>
+    <meta name="viewport" content="user-scalable=no">
+</head>
+<body>
+<div class="slider">
+    <div class="item slide-left active"></div>
+    <div class="item slide-right"></div>
+</div>
+<script>
+    $('.slider').slideEffect();
+</script>
+</body>
+</html>
