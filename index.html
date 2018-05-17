@@ -16,7 +16,9 @@
     <div class="item slide-right"></div>
 </div>
 <script>
-    $('.slider').slideEffect();
+    $('.slider').slideEffect({'onChange': function(direction){
+      console.log('change to ' + direction);
+    }});
 </script>
 </body>
 </html>

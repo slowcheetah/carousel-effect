@@ -47,6 +47,9 @@
         $(settings.leftSelector).removeClass(settings.activeClass);
         $(settings.leftSelector).removeClass(settings.turnAwayLeftClass);
       });
+      if (settings.onChange !== undefined) {
+        settings.onChange('right');
+      }
     },
     left: function () {
       if ($(settings.leftSelector).hasClass(settings.activeClass)) {
@@ -62,6 +65,9 @@
         $(settings.rightSelector).removeClass(settings.activeClass);
         $(settings.rightSelector).removeClass(settings.turnAwayRightClass);
       });
+      if (settings.onChange !== undefined) {
+        settings.onChange('left');
+      }
     },
   };
 
